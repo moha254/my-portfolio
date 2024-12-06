@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>MOHAMED-ABUKAR</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets\img\IMG-20181208-WA0047.jpg" rel="icon">
+  <link href="assets/img/IMG-20181208-WA0047.jpg" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .loading {
+      animation: fade 1.5s ease-in-out infinite;
+      color: #fff;
+    }
+
+    .error-message, .sent-message {
+      animation: fade 1.5s ease-in-out;
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+      20% {
+        transform: translateX(-1px);
+      }
+      40% {
+        transform: translateX(1px);
+      }
+      60% {
+        transform: translateX(-1px);
+      }
+      80% {
+        transform: translateX(1px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  </style>
+ 
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets\img\abu.jpeg" alt="" class="img-fluid rounded-circle" style="width: 180px; height: 180px; object-fit: cover; border: 3px solid #2c2f3f;">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Mohamed Abukar</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="tiktok"><i class="bi bi-tiktok"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets\img\IMG-20220710-WA0002.jpg" alt="" data-aos="fade-in" style="object-fit: cover; transform: scale(0.9); width: 100%; height: 100vh; object-position: center 30%;">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Mohamed Abukar</h2>
+        <p>I'm <span class="typed" data-typed-items="Designer, Freelancer,Full Stack Developer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Learn more about me, my experience, and my journey as a full-stack developer and UI/UX designer.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets\img\Snapchat-2.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>UI/UX Designer &amp; Web Developer.</h2>
+            <p class="fst-italic py-3">
+              I specialize in creating user-centric designs and seamless web experiences to make a meaningful impact.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>20th October 2000</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>mohamedabukar412@gmail.com</span></li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> 
+                    <strong>Phone:</strong> 
+                    <span>
+                      <a href="tel:+254792837410" aria-label="Call +2547 9283 7410">+254 792 837 410</a>
+                    </span>
+                  </li>
+                  
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>NAIROBI,Kenya</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Degree</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              I am passionate about designing and developing solutions that provide value to users. My focus is on crafting seamless experiences by combining my skills in UI/UX design with my expertise in full-stack development. I am always eager to learn new technologies and challenge myself with exciting projects.
+            </p>
+            
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+     <!-- Happy Clients Stat -->
+<div class="col-lg-3 col-md-6">
+  <div class="stats-item">
+    <i class="bi bi-emoji-smile"></i>
+    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+    <p><strong>Happy Clients</strong></p>
+  </div>
+</div><!-- End Stats Item -->
+
+<!-- Projects Stat -->
+<div class="col-lg-3 col-md-6">
+  <div class="stats-item">
+    <i class="bi bi-journal-richtext"></i>
+    <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+    <p><strong>Projects</strong></p>
+  </div>
+</div><!-- End Stats Item -->
+
+
+       <!-- Hours of Support Stat -->
+<div class="col-lg-3 col-md-6">
+  <div class="stats-item">
+    <i class="bi bi-headset"></i>
+    <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+    <p><strong>Hours of Support</strong></p>
+  </div>
+</div><!-- End Stats Item -->
+
+<!-- Hard Workers Stat -->
+<div class="col-lg-3 col-md-6">
+  <div class="stats-item">
+    <i class="bi bi-people"></i>
+    <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+    <p><strong>Hard Workers</strong></p>
+  </div>
+</div><!-- End Stats Item -->
+
+
+    </section><!-- /Stats Section -->
+<!-- Skills Section -->
+<section id="skills" class="skills section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skills</h2>
+    <p>Here are my technical proficiencies and professional competencies that I've developed throughout my career</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row skills-content skills-animation">
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>Frontend Development (HTML/CSS/JS)</span> <i class="val">95%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>React.js</span> <i class="val">85%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Node.js</span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Python</span> <i class="val">85%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Git & Version Control</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>UI/UX Design</span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Database Management</span> <i class="val">85%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>RESTful APIs</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Cloud Services (AWS/Azure)</span> <i class="val">75%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Agile Development</span> <i class="val">85%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Skills Section -->
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>A detail-oriented software engineering graduate with strong technical skills and practical experience in full stack development.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Full Stack Developer</h4>
+              <p><em>Detail-oriented and methodical full stack developer with strong technical foundation and multilingual communication skills. Proficient in modern web technologies and development practices.</em></p>
+              <ul>
+                <li>Mombasa, Kenya</li>
+                <li>Available for Remote Work</li>
+                <li>mohamedabukar412@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Diploma in Software Engineering</h4>
+              <h5>2024</h5>
+              <p><em>Zetech University</em></p>
+              <p>Comprehensive training in software development, with focus on both theoretical foundations and practical applications in modern programming technologies.</p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Kenya Certificate of Secondary Education</h4>
+              <h5>2019</h5>
+              <p><em>Alidinna Visram Secondary School</em></p>
+            </div>
+
+            <div class="resume-item">
+              <h4>Kenya Certificate of Primary Education</h4>
+              <h5>2015</h5>
+              <p><em>Tahmiyyah Primary School</em></p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Cashier</h4>
+              <h5>January 2020 - December 2021</h5>
+              <p><em>Qaffee Point, Mombasa, Kenya</em></p>
+              <ul>
+                <li>Maintained awareness of potential theft or fraudulent activities</li>
+                <li>Coordinated with loss prevention or security personnel when necessary</li>
+                <li>Demonstrated strong attention to detail and organizational skills</li>
+                <li>Developed excellent customer service and communication abilities</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Technical Skills</h3>
+            <div class="resume-item">
+              <ul>
+                <li>Computer Literacy: Proficient in MS Word, Excel, PowerPoint, Internet, and Outlook</li>
+                <li>Econometric Software: Experienced in using EViews for statistical analysis and forecasting</li>
+                <li>Accounting Software: Familiar with Pastel for bookkeeping, invoicing, and financial reporting</li>
+                <li>Communication Skills: Strong written and verbal communication in Somali, English, and Kiswahili</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Training & Certifications</h3>
+            <div class="resume-item">
+              <ul>
+                <li>Work Readiness Training</li>
+                <li>Introduction to Office and Project Management</li>
+                <li>MS Office In-House Training (Excel, PowerPoint, Word, Outlook)</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Showcasing my projects and development work in web applications, UI/UX design, and full stack development.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-web">Web Development</li>
+            <li data-filter=".filter-app">Applications</li>
+            <li data-filter=".filter-ui">UI/UX Design</li>
+            <li data-filter=".filter-database">Database</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Personal Portfolio Website</h4>
+                  <p>A responsive portfolio website built with HTML5, CSS3, and JavaScript</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="Portfolio Website" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Task Management App</h4>
+                  <p>A full stack task management application using PHP and MySQL</p>
+                  <a href="assets/img/portfolio/product-1.jpg" title="Task App" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>E-commerce UI Design</h4>
+                  <p>Modern and intuitive UI design for an e-commerce platform</p>
+                  <a href="assets/img/portfolio/branding-1.jpg" title="UI Design" data-gallery="portfolio-gallery-ui" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-database">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Inventory Management System</h4>
+                  <p>Database design and implementation for inventory tracking</p>
+                  <a href="assets/img/portfolio/books-1.jpg" title="Database Project" data-gallery="portfolio-gallery-database" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Blog Platform</h4>
+                  <p>Custom blog platform with content management system</p>
+                  <a href="assets/img/portfolio/app-2.jpg" title="Blog Platform" data-gallery="portfolio-gallery-web" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Weather Dashboard</h4>
+                  <p>Real-time weather application using APIs and JavaScript</p>
+                  <a href="assets/img/portfolio/product-2.jpg" title="Weather App" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Offering professional web development and software solutions to help bring your digital ideas to life</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-window-fullscreen"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Web Development</a></h4>
+              <p class="description">Custom responsive website development using modern technologies like HTML5, CSS3, JavaScript, and PHP. Building user-friendly and SEO-optimized web solutions.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-palette"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">UI/UX Design</a></h4>
+              <p class="description">Creating intuitive and visually appealing user interfaces with focus on user experience. Designing modern, responsive layouts that engage users.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-database"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Database Management</a></h4>
+              <p class="description">Database design, implementation, and optimization using MySQL. Creating efficient data structures and maintaining data integrity.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-phone"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Mobile-First Development</a></h4>
+              <p class="description">Developing mobile-responsive applications that work seamlessly across all devices and screen sizes.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-gear"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">API Development</a></h4>
+              <p class="description">Building and integrating RESTful APIs for seamless data communication between front-end and back-end systems.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Website Maintenance</a></h4>
+              <p class="description">Providing ongoing support, updates, and maintenance to ensure your website remains secure, up-to-date, and performing optimally.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>These are the testimonials from satisfied clients, partners, and colleagues. They are a testament to the quality of service and the value that I bring to the projects I work on.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Mohamed Abukar is a very professional and skilled web developer. He is always willing to help and is very knowledgeable in the latest web technologies.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/muthoni.jpg" class="testimonial-img" alt="">
+                <h3>Muthoni Gathecha</h3>
+                <h4>Software Engineer, Nairobi</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I have worked with Mohamed Abukar on several projects and he has always been very professional and easy to work with. He is very knowledgeable in web development and is always willing to help.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/kennedy.jpg" class="testimonial-img" alt="">
+                <h3>Kennedy Odhiambo</h3>
+                <h4>Software Engineer, Nairobi</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Mohamed Abukar is a very professional and skilled web developer. He is always willing to help and is very knowledgeable in the latest web technologies.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/nduta.jpg" class="testimonial-img" alt="">
+                <h3>Nduta Waweru</h3>
+                <h4>Freelance Web Developer, Nairobi</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I have worked with Mohamed Abukar on several projects and he has always been very professional and easy to work with. He is very knowledgeable in web development and is always willing to help.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/kimani.jpg" class="testimonial-img" alt="">
+                <h3>Kimani Gichuki</h3>
+                <h4>Software Engineer, Nairobi</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Feel free to get in touch with me about any project, collaboration or just to say hi.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Nairobi, Kenya</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+254 792 837 410</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>mohamedabukar412@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8112191131355!2d36.817178!3d-1.289565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f117d7f9f6f1d%3A0x4e9b6e9f7c5c4d2c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1676961767416!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" data-aos="fade-up" data-aos-delay="200">
+              <input type="hidden" name="access_key" value="23516e32-48ec-41f4-96c2-79d9442d082a">
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required>
+                </div>
+          
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" name="email" id="email-field" class="form-control" required>
+                </div>
+          
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" name="subject" id="subject-field" class="form-control" required>
+                </div>
+          
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea name="message" id="message-field" class="form-control" rows="10" required></textarea>
+                </div>
+          
+                <div class="col-md-12 text-center">
+                  <div id="loading" class="loading" style="display: none;">Sending...</div>
+                  <div id="error-message" class="error-message" style="display: none;"></div>
+                  <div id="success-message" class="success-message" style="display: none;">Message sent successfully!</div>
+                  <button type="submit" id="sendButton" class="btn btn-primary">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          
+
+        </div>
+
+      </div>
+
+    </section><!-- Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center">
+        <p>&copy; 2024 <strong class="px-1">Mohamed Abukar</strong>. All Rights Reserved</p>
+      </div>
+      <div class="credits text-center">
+        <p>Designed & Developed with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://github.com/moha254" target="_blank">Mohamed Abukar</a></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  
+
+
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
