@@ -259,12 +259,9 @@
       if (data.success) {
         // Success message
         await Swal.fire({
-          icon: 'success',
-          title: 'Message Sent!',
-          text: 'Thank you for contacting me. I will get back to you soon!',
-          showConfirmButton: true,
-          timer: 3000,
-          timerProgressBar: true
+          title: "Good job!",
+          text: "Your message has been sent successfully.",
+          icon: "success"
         });
         
         // Reset form
