@@ -228,6 +228,55 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Contact Form Handler
+   */
+  const contactForm = document.querySelector('.php-email-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      let thisForm = this;
+      let loading = thisForm.querySelector('.loading');
+      let errorMessage = thisForm.querySelector('.error-message');
+      let sentMessage = thisForm.querySelector('.sent-message');
+      
+      loading.style.display = 'block';
+      errorMessage.style.display = 'none';
+      sentMessage.style.display = 'none';
+
+      let formData = new FormData(thisForm);
+
+      fetch(thisForm.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error(`${response.status} ${response.statusText}`);
+      })
+      .then(data => {
+        loading.style.display = 'none';
+        if (data.success) {
+          sentMessage.style.display = 'block';
+          thisForm.reset();
+        } else {
+          throw new Error(data.message ? data.message : 'Form submission failed!');
+        }
+      })
+      .catch((error) => {
+        loading.style.display = 'none';
+        errorMessage.style.display = 'block';
+        errorMessage.innerHTML = error.message;
+      });
+    });
+  }
+
 })();
 
 document.addEventListener('DOMContentLoaded', function() {
