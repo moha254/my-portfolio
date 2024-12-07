@@ -231,54 +231,51 @@
   /**
    * Contact Form Handler
    */
-  document.getElementById('contactForm').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    
-    // Show loading state
-    Swal.fire({
-      title: 'Sending Message...',
-      html: 'Please wait...',
-      allowOutsideClick: false,
-      didOpen: () => {
-        Swal.showLoading();
-      }
-    });
+  const contactForm = document.querySelector('.php-email-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      let thisForm = this;
+      let loading = thisForm.querySelector('.loading');
+      let errorMessage = thisForm.querySelector('.error-message');
+      let sentMessage = thisForm.querySelector('.sent-message');
+      
+      loading.style.display = 'block';
+      errorMessage.style.display = 'none';
+      sentMessage.style.display = 'none';
 
-    try {
-      const formData = new FormData(this);
-      const response = await fetch(this.action, {
+      let formData = new FormData(thisForm);
+
+      fetch(thisForm.action, {
         method: 'POST',
         body: formData,
         headers: {
           'Accept': 'application/json'
         }
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error(`${response.status} ${response.statusText}`);
+      })
+      .then(data => {
+        loading.style.display = 'none';
+        if (data.success) {
+          sentMessage.style.display = 'block';
+          thisForm.reset();
+        } else {
+          throw new Error(data.message ? data.message : 'Form submission failed!');
+        }
+      })
+      .catch((error) => {
+        loading.style.display = 'none';
+        errorMessage.style.display = 'block';
+        errorMessage.innerHTML = error.message;
       });
-
-      const data = await response.json();
-
-      if (data.success) {
-        // Success message
-        await Swal.fire({
-          title: "Good job!",
-          text: "Your message has been sent successfully.",
-          icon: "success"
-        });
-        
-        // Reset form
-        this.reset();
-      } else {
-        throw new Error(data.message || 'Something went wrong!');
-      }
-    } catch (error) {
-      // Error message
-      await Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: error.message || 'Something went wrong! Please try again.',
-        showConfirmButton: true
-      });
-    }
-  });
+    });
+  }
 
 })();
 
