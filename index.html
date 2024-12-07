@@ -9,7 +9,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets\img\IMG-20181208-WA0047.jpg" rel="icon">
+  <link href="assets/img/IMG-20181208-WA0047.jpg" rel="icon">
   <link href="assets/img/IMG-20181208-WA0047.jpg" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -76,7 +76,7 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets\img\abu.jpeg" alt="" class="img-fluid rounded-circle" style="width: 180px; height: 180px; object-fit: cover; border: 3px solid #2c2f3f;">
+      <img src="assets/img/abu.jpeg" alt="" class="img-fluid rounded-circle" style="width: 180px; height: 180px; object-fit: cover; border: 3px solid #2c2f3f;">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -112,7 +112,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets\img\IMG-20220710-WA0002.jpg" alt="" data-aos="fade-in" style="object-fit: cover; transform: scale(0.9); width: 100%; height: 100vh; object-position: center 30%;">
+      <img src="assets/img/IMG-20220710-WA0002.jpg" alt="" data-aos="fade-in" style="object-fit: cover; transform: scale(0.9); width: 100%; height: 100vh; object-position: center 30%;">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Mohamed Abukar</h2>
@@ -134,7 +134,7 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets\img\Snapchat-2.jpg" class="img-fluid" alt="">
+            <img src="assets/img/Snapchat-2.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
             <h2>UI/UX Designer &amp; Web Developer.</h2>
@@ -678,89 +678,58 @@
     </section><!-- /Testimonials Section -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
+    <section id="contact" class="contact section light-background">
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Feel free to get in touch with me about any project, collaboration or just to say hi.</p>
-      </div><!-- End Section Title -->
+        <p>Feel free to reach out to me for any inquiries or collaboration opportunities.</p>
+      </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
+      <div class="container" data-aos="fade-up">
         <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>Nairobi, Kenya</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Us</h3>
-                  <p>+254 792 837 410</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Us</h3>
-                  <p>mohamedabukar412@gmail.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8112191131355!2d36.817178!3d-1.289565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f117d7f9f6f1d%3A0x4e9b6e9f7c5c4d2c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1676961767416!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="col-md-6">
+            <div class="info-item" data-aos="fade-up">
+              <i class="bi bi-envelope"></i>
+              <h3>Email</h3>
+              <p>mohamedabukar412@gmail.com</p>
             </div>
           </div>
+          <div class="col-md-6">
+            <div class="info-item" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-phone"></i>
+              <h3>Phone</h3>
+              <p>+254 716 304 517</p>
+            </div>
+          </div>
+        </div>
 
-          <div class="col-lg-7">
-            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" data-aos="fade-up" data-aos-delay="200">
-              <input type="hidden" name="access_key" value="23516e32-48ec-41f4-96c2-79d9442d082a">
+        <div class="row gy-4 mt-1">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://formspree.io/f/mohamedabukar412@gmail.com" method="POST" class="php-email-form">
               <div class="row gy-4">
                 <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required>
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                 </div>
-          
                 <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" name="email" id="email-field" class="form-control" required>
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
                 </div>
-          
                 <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" name="subject" id="subject-field" class="form-control" required>
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required>
                 </div>
-          
                 <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea name="message" id="message-field" class="form-control" rows="10" required></textarea>
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
                 </div>
-          
                 <div class="col-md-12 text-center">
-                  <div id="loading" class="loading" style="display: none;">Sending...</div>
-                  <div id="error-message" class="error-message" style="display: none;"></div>
-                  <div id="success-message" class="success-message" style="display: none;">Message sent successfully!</div>
-                  <button type="submit" id="sendButton" class="btn btn-primary">Send Message</button>
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <button type="submit">Send Message</button>
                 </div>
               </div>
             </form>
           </div>
-          
-
         </div>
-
       </div>
-
-    </section><!-- Contact Section -->
+    </section><!-- End Contact Section -->
 
   </main>
 
