@@ -237,15 +237,19 @@
       e.preventDefault();
       
       let thisForm = this;
-      let loading = thisForm.querySelector('.loading');
-      let errorMessage = thisForm.querySelector('.error-message');
-      let sentMessage = thisForm.querySelector('.sent-message');
-      
-      loading.style.display = 'block';
-      errorMessage.style.display = 'none';
-      sentMessage.style.display = 'none';
-
       let formData = new FormData(thisForm);
+
+      // Show loading state
+      Swal.fire({
+        title: 'Sending...',
+        text: 'Please wait while we send your message',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        showConfirmButton: false,
+        didOpen: () => {
+          Swal.showLoading();
+        }
+      });
 
       fetch(thisForm.action, {
         method: 'POST',
@@ -261,18 +265,29 @@
         throw new Error(`${response.status} ${response.statusText}`);
       })
       .then(data => {
-        loading.style.display = 'none';
         if (data.success) {
-          sentMessage.style.display = 'block';
+          // Show success message
+          Swal.fire({
+            icon: 'success',
+            title: 'Thank you!',
+            text: 'Your message has been sent successfully.',
+            showConfirmButton: true,
+            timer: 3000,
+            timerProgressBar: true
+          });
           thisForm.reset();
         } else {
           throw new Error(data.message ? data.message : 'Form submission failed!');
         }
       })
       .catch((error) => {
-        loading.style.display = 'none';
-        errorMessage.style.display = 'block';
-        errorMessage.innerHTML = error.message;
+        // Show error message
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: error.message || 'Something went wrong! Please try again.',
+          showConfirmButton: true
+        });
       });
     });
   }
