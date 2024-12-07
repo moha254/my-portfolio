@@ -231,66 +231,57 @@
   /**
    * Contact Form Handler
    */
-  const contactForm = document.querySelector('.php-email-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      let thisForm = this;
-      let formData = new FormData(thisForm);
+  document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // Show loading state
+    Swal.fire({
+      title: 'Sending Message...',
+      html: 'Please wait...',
+      allowOutsideClick: false,
+      didOpen: () => {
+        Swal.showLoading();
+      }
+    });
 
-      // Show loading state
-      Swal.fire({
-        title: 'Sending...',
-        text: 'Please wait while we send your message',
-        allowOutsideClick: false,
-        allowEscapeKey: false,
-        showConfirmButton: false,
-        didOpen: () => {
-          Swal.showLoading();
-        }
-      });
-
-      fetch(thisForm.action, {
+    try {
+      const formData = new FormData(this);
+      const response = await fetch(this.action, {
         method: 'POST',
         body: formData,
         headers: {
           'Accept': 'application/json'
         }
-      })
-      .then(response => {
-        if (response.ok) {
-          return response.json();
-        }
-        throw new Error(`${response.status} ${response.statusText}`);
-      })
-      .then(data => {
-        if (data.success) {
-          // Show success message
-          Swal.fire({
-            icon: 'success',
-            title: 'Thank you!',
-            text: 'Your message has been sent successfully.',
-            showConfirmButton: true,
-            timer: 3000,
-            timerProgressBar: true
-          });
-          thisForm.reset();
-        } else {
-          throw new Error(data.message ? data.message : 'Form submission failed!');
-        }
-      })
-      .catch((error) => {
-        // Show error message
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: error.message || 'Something went wrong! Please try again.',
-          showConfirmButton: true
-        });
       });
-    });
-  }
+
+      const data = await response.json();
+
+      if (data.success) {
+        // Success message
+        await Swal.fire({
+          icon: 'success',
+          title: 'Message Sent!',
+          text: 'Thank you for contacting me. I will get back to you soon!',
+          showConfirmButton: true,
+          timer: 3000,
+          timerProgressBar: true
+        });
+        
+        // Reset form
+        this.reset();
+      } else {
+        throw new Error(data.message || 'Something went wrong!');
+      }
+    } catch (error) {
+      // Error message
+      await Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: error.message || 'Something went wrong! Please try again.',
+        showConfirmButton: true
+      });
+    }
+  });
 
 })();
 
